@@ -1,0 +1,16 @@
+@use "src/variables.scss" as variables;
+
+.button {
+   padding: 0.5rem 1rem;
+   background-color: variables.$gray-200;
+   border: none;
+   border-radius: 50rem;
+   box-shadow: variables.$shadow-elevated;
+   color: variables.$gray-100;
+   cursor: pointer;
+   font-weight: bold;
+   &:active {
+      box-shadow: none;
+      transform: translateY(4px);
+   }
+}

@@ -1,0 +1,10 @@
+@use "src/variables.scss" as variables;
+
+.card {
+   padding: 1.5rem;
+   border: variables.$gray-400 solid 1px;
+   border-radius: 1rem;
+   background-color: variables.$gray-250;
+   box-shadow: variables.$shadow-regular-300;
+   display: flex;
+}

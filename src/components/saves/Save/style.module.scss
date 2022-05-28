@@ -1,0 +1,16 @@
+@use "src/variables.scss" as variables;
+
+.save {
+   padding: 0.5rem;
+   cursor: pointer;
+   border-radius: 0.9rem;
+   &:hover {
+      background-color: variables.$gray-200;
+   }
+   p {
+      font-size: 0.8rem;
+      span {
+         font-weight: bold;
+      }
+   }
+}

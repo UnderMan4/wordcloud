@@ -1,0 +1,38 @@
+@use "src/variables.scss" as variables;
+
+.gameCheck {
+   .button {
+      font-size: 1.5rem;
+   }
+}
+
+.correct {
+   color: variables.$green-300 !important;
+   display: flex;
+   flex-direction: column;
+   &:before {
+      content: "Good";
+      color: variables.$green-200;
+      font-size: 0.7rem;
+   }
+}
+.incorrect {
+   color: variables.$red-300 !important;
+   display: flex;
+   flex-direction: column;
+   &:before {
+      content: "Bad";
+      color: variables.$red-200;
+      font-size: 0.7rem;
+   }
+}
+.missed {
+   color: variables.$yellow-300 !important;
+   display: flex;
+   flex-direction: column;
+   &:before {
+      content: "Missed";
+      color: variables.$yellow-200;
+      font-size: 0.7rem;
+   }
+}

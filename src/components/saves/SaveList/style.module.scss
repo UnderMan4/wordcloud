@@ -1,0 +1,29 @@
+@use "src/variables.scss" as variables;
+
+.saveList {
+   width: 10rem;
+   height: 15rem;
+   border-radius: 0.7rem;
+   box-shadow: variables.$shadow-inner;
+   padding: 0.4rem;
+   .wrapper {
+      padding: 0.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      overflow-y: auto;
+      height: 100%;
+      &::-webkit-scrollbar-track {
+         border-radius: 10px;
+         background-color: transparent;
+      }
+      &::-webkit-scrollbar {
+         width: 4px;
+         background-color: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+         border-radius: 10px;
+         background-color: variables.$gray-200;
+      }
+   }
+}

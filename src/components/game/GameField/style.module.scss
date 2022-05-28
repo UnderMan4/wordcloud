@@ -1,0 +1,36 @@
+@use "src/variables.scss" as variables;
+
+.gameField {
+   .field {
+      height: 25rem;
+      width: 40rem;
+      border-radius: 0.7rem;
+      position: relative;
+      padding: 0.2rem;
+      .word {
+         position: absolute;
+         border: 1px solid;
+         user-select: none;
+         background-color: variables.$gray-200;
+         border-radius: 0.4rem;
+         box-shadow: variables.$shadow-regular-200;
+         &:hover {
+            z-index: 100;
+            background-color: variables.$gray-150;
+         }
+         input {
+            display: none;
+            &:checked + label {
+               color: variables.$blue-200;
+               font-weight: bold;
+            }
+         }
+
+         label {
+            padding: 0.3rem;
+            cursor: pointer;
+            text-align: center;
+         }
+      }
+   }
+}

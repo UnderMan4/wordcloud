@@ -1,0 +1,56 @@
+@use "src/variables.scss" as variables;
+
+.resultPage {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: variables.$gray-100;
+   .card {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      .info {
+         tr > td:nth-child(1) {
+            font-weight: bold;
+            padding: 0.1rem 0.3em;
+         }
+         tr > td:nth-child(2) {
+            padding: 0.1rem 0.5em;
+         }
+
+         .correct {
+            td:nth-child(1) {
+               color: variables.$green-300;
+            }
+            td:nth-child(2) {
+               color: variables.$green-200;
+            }
+         }
+         .incorrect {
+            td:nth-child(1) {
+               color: variables.$red-300;
+            }
+            td:nth-child(2) {
+               color: variables.$red-200;
+            }
+         }
+         .missed {
+            td:nth-child(1) {
+               color: variables.$yellow-300;
+            }
+            td:nth-child(2) {
+               color: variables.$yellow-200;
+            }
+         }
+      }
+      .buttons {
+         display: flex;
+         gap: 1rem;
+      }
+   }
+}
